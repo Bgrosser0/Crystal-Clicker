@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector || Ben Grosser
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    
+<div id="backgroundColor">
+<!-- Main-Container -->
+<div id="game">
+
+    <!-- Header Row -->
+
+    <div class="row" id="headerRow">
+        <h1>Crystal Collector</h1>
+    </div>
+
+
+        <!-- Column "Crystal Collector" -->
+
+
+    <!-- Row 2  -->
+
+    <div class="row" id="instructionsRow">
+
+        <div class="col-md-9">
+
+        <!-- Column "Instructions" -->
+            <div>
+            <p>You will be given a random target score at the start of the game</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to target score, you lose if your total score goes above the target score.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time the game starts the values of each crystal will change.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Row 3 -->
+
+    <div class="row"> 
+    
+        <div class="col-md-4" id="scoreCol">
+
+        <!-- Column "Target Score" -->
+        <p>Target Score: <span id="targetNumber">25
+            <!-- RANDOMLY GENERATED TARGETNUMBER -->
+        </span></p>
+
+        </div>
+
+
+        <div class="col-md-5" id="winsLossesCol">
+
+        <!-- Column "Wins + Losses" -->
+        <p>Wins: <span id="wins">0</span></p>
+
+        <p>Losses: <span id="losses">0</span></p>
+
+
+        </div>
+
+    </div>
+
+    <!-- ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ -->
+
+    <!-- Row 4 -->
+
+    <div class="row" id="crystalRow">
+
+    
+        <!-- Column "Crystal Container" -->
+
+        <div class="col-md-9">
+
+            <!-- Sub-Row -->
+
+            <div class="row" id="sub-crystalRow">
+
+                <!-- "Crystal Buttons 1-4" -->
+
+                <div class="col-md-3">
+
+                    <button id="crystalButton1" class="crystalButton" value="5" style="font-size:2em; color: indianred"><i class="far fa-gem"></i></button>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <button id="crystalButton2" class="crystalButton" style="font-size:2em; color: rgb(18, 168, 18)"><i class="far fa-gem"></i></button>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <button id="crystalButton3" class="crystalButton" style="font-size:2em; color: rgb(71, 4, 97)"><i class="far fa-gem"></i></button>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <button id="crystalButton4" class="crystalButton" style="font-size:2em; color: rgb(179, 168, 24)"><i class="far fa-gem"></i></button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ -->
+
+    <!-- Row 5 -->
+
+    <div class="row" id="yourTotalScoreRow">
+
+        <div class="col-md-9">
+
+        <!-- Column "Your Total Score" -->
+        <p>Your Total Score: <span id="yourTotalScore">0</span></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+        
+</body>
+</html>
